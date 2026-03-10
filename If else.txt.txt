@@ -1,0 +1,114 @@
+1. Age greater than 18 print Adult
+import java.util.*;
+class AgeCheck {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int age = sc.nextInt();
+        if(age > 18) {
+            System.out.println("Adult");
+        }
+    }
+}
+
+2. Check number divisible by 10
+import java.util.*;
+class DivisibleBy10 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        if(n % 10 == 0) {
+            System.out.println("Divisible by 10");
+        } else {
+            System.out.println("Not divisible by 10");
+        }
+    }
+}
+
+3. Temperature above 30 print Hot Day
+import java.util.*;
+class TemperatureCheck {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int temp = sc.nextInt();
+        if(temp > 30) {
+            System.out.println("Hot Day");
+        }
+    }
+}
+
+4. Check even or odd
+import java.util.*;
+class EvenOdd {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        if(n % 2 == 0) {
+            System.out.println("Even");
+        } else {
+            System.out.println("Odd");
+        }
+    }
+}
+
+5. Leap year check
+import java.util.*;
+class LeapYear {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int year = sc.nextInt();
+        if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+            System.out.println("Leap Year");
+        } else {
+            System.out.println("Not Leap Year");
+        }
+    }
+}
+
+6. Positive or Negative number
+import java.util.*;
+class PositiveNegative {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        if(n >= 0) {
+            System.out.println("Positive");
+        } else {
+            System.out.println("Negative");
+        }
+    }
+}
+
+7. Grade based on marks
+import java.util.*;
+class GradeCheck {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int marks = sc.nextInt();
+
+        if(marks >= 90 && marks <= 100) System.out.println("Grade A");
+        else if(marks >= 75) System.out.println("Grade B");
+        else if(marks >= 50) System.out.println("Grade C");
+        else if(marks >= 35) System.out.println("Grade D");
+        else System.out.println("Fail");
+    }
+}
+
+8. Print day of week based on number
+import java.util.*;
+class DayOfWeek {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int day = sc.nextInt();
+
+        switch(day) {
+            case 1: System.out.println("Monday"); break;
+            case 2: System.out.println("Tuesday"); break;
+            case 3: System.out.println("Wednesday"); break;
+            case 4: System.out.println("Thursday"); break;
+            case 5: System.out.println("Friday"); break;
+            case 6: System.out.println("Saturday"); break;
+            case 7: System.out.println("Sunday"); break;
+            default: System.out.println("Invalid");
+        }
+    }
+}
